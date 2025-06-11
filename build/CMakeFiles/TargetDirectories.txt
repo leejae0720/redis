@@ -1,0 +1,4 @@
+/home/george/redis_ws/src/redis_pubsub/build/CMakeFiles/publisher.dir
+/home/george/redis_ws/src/redis_pubsub/build/CMakeFiles/subscriber.dir
+/home/george/redis_ws/src/redis_pubsub/build/CMakeFiles/edit_cache.dir
+/home/george/redis_ws/src/redis_pubsub/build/CMakeFiles/rebuild_cache.dir
