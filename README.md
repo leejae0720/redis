@@ -11,7 +11,7 @@ The communication in this branch can be used as an example for future developmen
 ## Getting Started
 
 ```bash
-$git -b redis_ros2_dual_pubsub clone https://github.com/leejae0720/redis.git
+$git clone -b redis_ros2_dual_pubsub https://github.com/leejae0720/redis.git
 $cd ..
 $colcon build --packages-select redis
 
