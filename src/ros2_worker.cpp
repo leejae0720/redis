@@ -1,10 +1,10 @@
 #include "ros2_worker.hpp"
 
-RosWorker::RosWorker() : Node("ros2_only_node") {
-  pub_ = this->create_publisher<std_msgs::msg::String>("ros2_topic", 10);
+RosWorker::RosWorker() : Node("ros2_pubsub_node") {
+  pub_ = this->create_publisher<std_msgs::msg::String>("test_topic", 10);
 
   sub_ = this->create_subscription<std_msgs::msg::String>(
-    "ros2_topic", 10,
+    "test_topic", 10,
     [this](std_msgs::msg::String::SharedPtr msg) {
       RCLCPP_INFO(this->get_logger(), "[ROS2] received: %s", msg->data.c_str());
     });
