@@ -11,11 +11,11 @@ The communication in this branch can be used as an example for future developmen
 ## Getting Started
 
 ```bash
-git -b redis_ros2_dual_pubsub clone https://github.com/leejae0720/redis.git
-cd ..
-colcon build --packages-select redis
+$git -b redis_ros2_dual_pubsub clone https://github.com/leejae0720/redis.git
+$cd ..
+$colcon build --packages-select redis
 
-source install/setup.bash
+$source install/setup.bash
 ```
 
 ## Run
@@ -23,7 +23,7 @@ When this package is launched, communication between Redis and ROS2 will take pl
 
 ```bash
 # In terminal, launch
-ros2 launch redis redis_ros2_pubsub.launch.py
+$ros2 launch redis redis_ros2_pubsub.launch.py
 ```
 
 ## Usage
@@ -31,12 +31,12 @@ checking subscribe data
 
 ```bash
 # ros2 subscribe checking & print topic list
-ros2 topic list
-ros2 topic echo test_topic
+$ros2 topic list
+$ros2 topic echo test_topic
 
 # redis subscribe checking & print channels list
-redis-cli PUBSUB channels
-redis-cli SUBSCRIBE test_channel
+$redis-cli PUBSUB channels
+$redis-cli SUBSCRIBE test_channel
 ```
 
 ------
